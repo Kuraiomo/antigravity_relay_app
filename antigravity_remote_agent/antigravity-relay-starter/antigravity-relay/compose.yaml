@@ -1,9 +1,0 @@
-services:
-  relay:
-    build: .
-    container_name: antigravity-relay
-    restart: unless-stopped
-    env_file: .env
-    ports:
-      - "127.0.0.1:8765:8765"
-    mem_limit: 128m
