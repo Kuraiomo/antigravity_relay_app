@@ -1,0 +1,142 @@
+# =============================================================================
+# Antigravity Remote System Bundle — .gitignore
+# STRICT SECURITY CONFIGURATION: PREVENTS COMMITTING SENSITIVE CREDENTIALS
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 1. CREDENTIALS, SECRETS & ENVIRONMENT FILES (NEVER COMMIT)
+# -----------------------------------------------------------------------------
+.env
+.env.*
+*.env
+*.env.*
+!.env.example
+!*.env.example
+!.env.template
+!*.env.template
+
+# Private keys, certificates, secrets, and auth tokens
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+*.token
+*.secret
+id_rsa*
+*.pub.key
+
+# Android signing keys, keystores, and credentials
+*.keystore
+*.jks
+key.properties
+signing.properties
+
+# Cloud / Service Account Credentials
+service-account*.json
+*credentials*.json
+google-services.json
+GoogleService-Info.plist
+
+# -----------------------------------------------------------------------------
+# 2. RUNTIME LOGS, AUDIT TRAILS & TEMPORARY FILES
+# -----------------------------------------------------------------------------
+*.log
+agent.log
+app.log
+audit.log
+logs/
+*.pid
+*.seed
+
+# -----------------------------------------------------------------------------
+# 3. PYTHON / DESKTOP AGENT / RELAY SERVER ARTIFACTS
+# -----------------------------------------------------------------------------
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Packaging / Distribution
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+
+# -----------------------------------------------------------------------------
+# 4. FLUTTER & DART MOBILE APP ARTIFACTS
+# -----------------------------------------------------------------------------
+# Flutter build and tool outputs
+flutter-mobile/build/
+**/build/
+.dart_tool/
+**/.dart_tool/
+.packages
+**/.packages
+.pub-cache/
+.pub/
+
+# Flutter plugin and framework artifacts
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Android-specific Flutter build clutter
+flutter-mobile/android/.gradle/
+**/android/.gradle/
+flutter-mobile/android/local.properties
+**/android/local.properties
+flutter-mobile/android/app/build/
+**/android/app/build/
+
+# iOS-specific Flutter artifacts
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.framework
+**/ios/Pods/
+**/ios/.symlinks/
+
+# Desktop Flutter ephemeral files
+**/windows/flutter/ephemeral/
+**/linux/flutter/ephemeral/
+**/macos/Flutter/ephemeral/
+
+# -----------------------------------------------------------------------------
+# 5. OPERATING SYSTEM & IDE ARTIFACTS
+# -----------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# VS Code & JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json

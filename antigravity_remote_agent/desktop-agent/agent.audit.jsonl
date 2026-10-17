@@ -1,0 +1,4 @@
+{"ts": "2026-10-17T15:34:53.293462+00:00", "user": "unknown", "device": "ayaan-windows-pc", "action": "terminal.execute", "outcome": "processing", "details": {"command": "cd ..", "workspace": "C:\\Users\\ayaan\\OneDrive\\Desktop"}}
+{"ts": "2026-10-17T15:34:53.294708+00:00", "user": "unknown", "device": "ayaan-windows-pc", "action": "command.denied:cd ..", "outcome": "denied", "details": {"reason": "Command not in allowlist: cd .."}}
+{"ts": "2026-10-17T15:36:52.074647+00:00", "user": "unknown", "device": "ayaan-windows-pc", "action": "terminal.execute", "outcome": "processing", "details": {"command": "deactivate", "workspace": "C:\\Users\\ayaan\\OneDrive\\Desktop"}}
+{"ts": "2026-10-17T15:36:52.077626+00:00", "user": "unknown", "device": "ayaan-windows-pc", "action": "command.denied:deactivate", "outcome": "denied", "details": {"reason": "Command not in allowlist: deactivate"}}

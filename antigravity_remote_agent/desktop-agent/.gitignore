@@ -1,0 +1,27 @@
+# Python Desktop Agent .gitignore
+.env
+.env.*
+*.env
+!.env.example
+
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+dist/
+build/
+*.egg-info/
+.eggs/
+
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+*.log
+agent.log
+audit.log
